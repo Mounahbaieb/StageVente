@@ -1,0 +1,18 @@
+.menu-link.active {
+    background-color: orange;
+    color: white;
+  }
+  .layout-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+  }
+  .content-wrapper {
+    padding-left: 100; /* Adjust based on the width of the fixed menu */
+  }
+  .layout-page{
+    padding-left: 250px;
+  }

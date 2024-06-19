@@ -1,0 +1,530 @@
+              
+    <div class="row p-3">
+      <!-- Order Statistics -->
+      <div class="col-md-12">  
+        <div class="card h-100">
+          <div class="card-header d-flex align-items-center justify-content-between pb-0">
+            <div class="card-title mb-0">
+              <h3>
+                    <b>
+                       Client 
+                    </b>                
+                  </h3>   
+             </div>
+            <div class="card p-3 menu-item">
+                   <li class=" d-flex mb-4 pb-1 ">
+                    <div class="avatar flex-shrink-0 me-3">
+                      <span class="avatar-initial rounded bg-label-primary">
+                        <i class='menu-icon bx bxs-calendar'></i></span>
+                    </div>
+                    <div class=" d-flex w-100 flex-wrap align-items-center justify-content-between gap-2  ">
+                      <div class="me-2 dropdown ">
+                        <button class="btn p-0"
+                        type="button"
+                        id="cardOpt3"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                            <h6 class="mb-0">Filtre Periode</h6>
+                        </button><br>
+                        <small class="text-muted">12 april 2023 - 15 Janvier 2024</small>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                            <div class="card p-3">
+                               <table>
+                                <tr>
+                                    <th *ngFor="let day of weekDays">{{ day }}</th>
+                                </tr>
+                                <tr *ngFor="let week of weeks">
+                                    <td *ngFor="let day of week" (click)="selectDate(day)">
+                                        <p *ngIf="day!==0">
+                                          {{ day }}  
+                                        </p></td>                                </tr>
+                            </table> 
+                            </div>
+                            
+                          </div>
+                      </div>
+                      
+                    </div>
+                  </li>
+            </div>
+           
+         
+             
+          </div>
+            <div class="row mt- p-3">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                     <div class="row">
+                        <div class="col-4">
+                             <div class="avatar flex-shrink-2">
+                                <img
+                                src="../assets/img/icons/unicons/chart-success.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                        </div>
+                         </div>
+                         <div class="col-8">
+                            <strong class="fw-semibold d-block mb-0" style="font-size: 40px; color: rgb(15, 15, 15);">365</strong>
+                            <p class="card-title mb-1"style="font-size: 12px;">Commande  en cours <br>
+                                <i class="bx bx-up-arrow-alt"></i> 
+                            <small>
+                                +4% (30 jours)</small></p>                           
+                           
+                          
+                         </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                     <div class="row">
+                        <div class="col-4">
+                             <div class="avatar flex-shrink-2">
+                                <img
+                                src="../assets/img/icons/unicons/chart-success.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                        </div>
+                         </div>
+                         <div class="col-8">
+                            <strong class="fw-semibold d-block mb-0" style="font-size: 40px; color: rgb(15, 15, 15);">365</strong>
+                            <p class="card-title mb-1"style="font-size: 12px;">Commande  en cours <br>
+                                <i class="bx bx-up-arrow-alt"></i> 
+                            <small>
+                                +4% (30 jours)</small></p>                           
+                           
+                          
+                         </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                     <div class="row">
+                        <div class="col-4">
+                             <div class="avatar flex-shrink-2">
+                                <img
+                                src="../assets/img/icons/unicons/chart-success.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                        </div>
+                         </div>
+                         <div class="col-8">
+                            <strong class="fw-semibold d-block mb-0" style="font-size: 40px; color: rgb(15, 15, 15);">365</strong>
+                            <p class="card-title mb-1"style="font-size: 12px;">Commande  en cours <br>
+                                <i class="bx bx-up-arrow-alt"></i> 
+                            <small>
+                                +4% (30 jours)</small></p>                           
+                           
+                          
+                         </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title d-flex align-items-start justify-content-between">
+                     <div class="row">
+                        <div class="col-4">
+                             <div class="avatar flex-shrink-2">
+                                <img
+                                src="../assets/img/icons/unicons/chart-success.png"
+                                alt="chart success"
+                                class="rounded"
+                              />
+                        </div>
+                         </div>
+                         <div class="col-8">
+                            <strong class="fw-semibold d-block mb-0" style="font-size: 40px; color: rgb(15, 15, 15);">365</strong>
+                            <p class="card-title mb-1"style="font-size: 12px;">Commande  en cours <br>
+                                <i class="bx bx-up-arrow-alt"></i> 
+                            <small>
+                                +4% (30 jours)</small></p>                           
+                           
+                          
+                         </div>
+                        </div>
+                        
+                    </div>
+                  </div>
+                </div>
+              </div>   
+            </div>
+           
+        
+        </div>
+      </div>
+     
+    </div>
+    <div class="row p-3">
+        <!-- Order Statistics -->
+        <div class="col-md-12">  
+            <div class="card">
+                <div class="row">
+                    <div class="col-3 mt-2">
+                        <h5 class="card-header">List Des Clients</h5>
+
+                    </div>
+                    <div class="col-9 mt-2 p-3">
+                        <div class="navbar-nav align-items-left">
+                            <div class="nav-item d-flex align-items-left">
+                                <div class="input-group " style="margin-right: 5px;">
+                                    <span class="input-group-text">
+                                        <i class="bx bx-search fs-4 lh-0"></i>
+                                    </span><input
+                                        type="text"
+                                        class="form-control border-1  rounded shadow-none w-90"
+                                        placeholder="Search..."
+                                        aria-label="Search..."
+                                    />
+                                  
+                                </div>
+                            </div>
+                            
+                          </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive text-nowrap">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Identifiant</th>
+                        <th>Nom et Prenom</th>
+                        <th>Adresse</th>
+                        <th>Date</th>
+                        <th>E-mail</th>
+                        <th>Numero de Telephone</th>
+                        <th>Action</th>
+                      </tr>
+                       
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <td>1</td>
+                         <td>Ryheb Elmoncer</td>
+                        <td>                          
+                           Sfax  
+                        </td>
+                        <td>
+                       12/02/2023
+                        <td>
+                          test@gmail.com
+                        </td>
+                        <td>
+                         +216 23568974
+                        </td>
+                        <td>
+                            <button mat-icon-button  aria-label="Example icon button with a home icon">
+                                <mat-icon style="color: blue;">remove_red_eye</mat-icon>
+                              </button>
+                              <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+                                <mat-icon  style="color: red;">block</mat-icon>
+                              </button>
+                            
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>     
+              </div>
+             
+          
+          </div>
+      
