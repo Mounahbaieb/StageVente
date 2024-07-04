@@ -1,0 +1,6 @@
+/* styles.css ou login.component.css si spécifique au composant */
+.large-text-black {
+    font-size: 2.5rem; /* Ajustez la taille du texte selon vos besoins */
+    color: black;
+  }
+  

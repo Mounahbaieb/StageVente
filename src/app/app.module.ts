@@ -16,12 +16,18 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+
 
  import { FormsModule } from '@angular/forms';
 import { CalindarComponent } from './pages/calindar/calindar.component';
 import { SousAdminComponent } from './pages/sous-admin/sous-admin.component';
 import { DetailsInvitationComponent } from './pages/details-invitation/details-invitation.component';
 import { LoginComponent } from './pages/login/login.component';
+import { InvitationComponent } from './pages/invitation/invitation.component';
+import { ConfirmDialogComponent } from './pages/confirm-dialog/confirm-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,12 +40,20 @@ import { LoginComponent } from './pages/login/login.component';
     CalindarComponent,
     SousAdminComponent,
     DetailsInvitationComponent,
-    LoginComponent
+    LoginComponent,
+    InventionComponent,
+    InvitationComponent,
+    ConfirmDialogComponent,
+
+    
+    
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,MatButtonModule,MatSelectModule,
     AppRoutingModule,FormsModule,MatNativeDateModule,MatIconModule,
-    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule
+    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule,MatDialogModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

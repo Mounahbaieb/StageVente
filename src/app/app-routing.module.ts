@@ -7,6 +7,8 @@ import { VendeursComponent } from './pages/vendeurs/vendeurs.component';
 import { SousAdminComponent } from './pages/sous-admin/sous-admin.component';
 import { DetailsInvitationComponent } from './pages/details-invitation/details-invitation.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './guards';
+import { InvitationComponent } from './pages/invitation/invitation.component';
 
 const routes: Routes = [
   {path:"index", component:DashbordComponent},
@@ -15,9 +17,16 @@ const routes: Routes = [
   {path:"vendeur", component:VendeursComponent},
   {path:"sousAdmin", component:SousAdminComponent},
   {path:"detailInvitation", component:DetailsInvitationComponent},
-  {path:"login", component:LoginComponent},
+  
+  { path: 'login', component: LoginComponent },
+  { path: 'dashboard', component: DashbordComponent, canActivate: [AuthGuard] },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'ride-detail/:id', component: InvitationComponent }
+
+
 
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
