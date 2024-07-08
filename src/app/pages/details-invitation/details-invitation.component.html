@@ -7,6 +7,8 @@
     <title>Invitations Cards</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <style>
         .btn {
             margin-left: 5px;
@@ -78,11 +80,22 @@
             <div class="col-md-3 invitation-card" *ngFor="let invitation of invitations" (click)="goToInvitationDetail(invitation.id)">
                 <div class="card">
                     <img [src]="invitation.image" class="card-img-top" [alt]="invitation.title">
+                    <img src="{{ invitation.profileImage }}" class="profile-img" alt="Profile Image">
+
                     <div class="card-body">
                         <h5 class="card-title">{{ invitation.title }}</h5>
-                        <p>Email: {{ invitation.email }}<br>
-                            Téléphone: {{ invitation.telephone }}<br>
-                            Adresse: {{ invitation.adresse }}</p>
+
+                        <p>
+                            <i class="fas fa-envelope"></i> {{ invitation.email }} 
+                        </p>
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i> {{ invitation.adresse }}
+
+                        </p>
+                        <p>
+                            <i class="fas fa-phone"></i> {{ invitation.telephone }}
+                        </p>
+
                         <div class="btn-group">
                             <button style="background-color: orange; color: white;" class="btn btn-accepter">
                                 <i class="material-icons">add</i> Accepter

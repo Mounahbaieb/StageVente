@@ -15,11 +15,20 @@ export class InvitationService {
     return this.httpClient.get<Invitation[]>(this.url);
   }
 
-  ONDELETE(id: string): Observable<any> {
-     return this.httpClient.delete(`http://localhost:3000/invitations/${id}`);
+  getInvitationById(invitationId: string): Observable<Invitation> {
+    return this.httpClient.get<Invitation>(`http://localhost:3000/invitations/${invitationId}`);
+  }
+  ONDELETE(invitationId: string): Observable<any> {
+     return this.httpClient.delete(`http://localhost:3000/invitations/${invitationId}`);
 }
+
+ajouterVendeur(vendeur: any): Observable<any> {
+  return this.httpClient.post<any>(`http://localhost:3000/vendeurs/`,vendeur);
+}
+
 
   GETALL(): Observable<Invitation[]> {
     return this.httpClient.get<Invitation[]>(this.url);
   }
+ 
 }

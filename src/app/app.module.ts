@@ -17,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; // Importez MatSnackBarModule
 
 
  import { FormsModule } from '@angular/forms';
@@ -52,7 +53,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     HttpClientModule,
     BrowserModule,MatButtonModule,MatSelectModule,
     AppRoutingModule,FormsModule,MatNativeDateModule,MatIconModule,
-    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule,MatDialogModule
+    MatSnackBarModule, 
+    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule,MatDialogModule,
 
   ],
   providers: [],

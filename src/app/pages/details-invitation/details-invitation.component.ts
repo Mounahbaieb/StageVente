@@ -5,6 +5,7 @@ import { InvitationService } from 'src/Service/invitation.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../confirm-dialog/confirm-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
+import { SearchServiceService } from 'src/Service/search-service.service';
 
 @Component({
   selector: 'app-details-invitation',
@@ -16,21 +17,31 @@ export class DetailsInvitationComponent implements OnInit {
   weekDays: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
   weeks: number[][] = [];
   invitations: Invitation[] = [];
-  tabinvitation:Invitation[]=[]
-  datasource = new MatTableDataSource<Invitation>(
- 
-    
-  );
+  tabinvitation: Invitation[] = [];
+  searchText: string = '';
+
+  datasource = new MatTableDataSource<Invitation>();
+
   constructor(
     private invitationService: InvitationService,
     private router: Router,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private searchService: SearchServiceService
+
   ) {}
 
   ngOnInit(): void {
+    this.getAllInvitations();
+
     this.generateCalendar();
     this.invitationService.getInvitations().subscribe((data: Invitation[]) => {
       this.invitations = data;
+      this.tabinvitation = data; // Store all invitations
+      this.datasource = new MatTableDataSource<Invitation>(this.invitations);
+
+    });
+    this.searchService.searchText$.subscribe((searchText: string) => {
+      this.search(searchText);
     });
   }
 
@@ -81,12 +92,22 @@ export class DetailsInvitationComponent implements OnInit {
     });
   }
 
+  getAllInvitations(): void {
+    this.invitationService.getInvitations().subscribe((data: Invitation[]) => {
+      this.invitations = data;
+      this.tabinvitation = data; // Store all invitations
+      this.datasource = new MatTableDataSource<Invitation>(this.invitations);
+    });
+  }
 
-    getAllInvitations(){
-    
-      this.invitationService.getInvitations().subscribe((m)=>{this.tabinvitation=m;this.datasource = new MatTableDataSource<Invitation>(
-        this.tabinvitation)})
-  
-    
+  search(searchText: string): void {
+    if (searchText.trim() !== '') {
+      this.invitations = this.tabinvitation.filter(invitation =>
+        invitation.title.toLowerCase().includes(searchText.toLowerCase())
+      );
+    } else {
+      this.invitations = this.tabinvitation; // Réinitialiser les invitations si le champ de recherche est vide
+    }
+    this.datasource = new MatTableDataSource<Invitation>(this.invitations);
   }
-  }
+}
