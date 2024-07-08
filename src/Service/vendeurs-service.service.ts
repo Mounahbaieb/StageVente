@@ -17,4 +17,7 @@ export class VendeursServiceService {
   ajouterVendeur(vendeur: Vendeur): Observable<Vendeur> {
     return this.http.post<Vendeur>(this.url, vendeur);
   }
+  getAllVendeurs(): Observable<Vendeur[]> {
+    return this.http.get<Vendeur[]>(this.url);
+  }
 }

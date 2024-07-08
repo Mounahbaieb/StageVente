@@ -189,15 +189,19 @@
                           <div class="navbar-nav align-items-left">
                               <div class="nav-item d-flex align-items-left">
                                   <div class="input-group " style="margin-right: 5px;">
-                                      <span class="input-group-text">
-                                          <i class="bx bx-search fs-4 lh-0"></i>
-                                      </span><input
-                                          type="text"
-                                          class="form-control border-1  rounded shadow-none w-90"
-                                          placeholder="Search..."
-                                          aria-label="Search..."
+                                    <div class="nav-item d-flex align-items-center">
+                                      <input
+                                        type="text"
+                                        class="form-control border-0 shadow-none"
+                                        placeholder="Search..."
+                                        aria-label="Search..."
+                                        [(ngModel)]="searchText"
+                                        (input)="onSearch()"
                                       />
-                                    
+                                      <i class="bx bx-search fs-4 lh-0"></i>
+                                    </div>
+                                    <button class="btn btn-outline-secondary" type="button" (click)="clearSearch()">Effacer</button>
+
                                   </div>
                               </div>
                               
@@ -206,34 +210,35 @@
                        
                   </div>
   
-                  <div class="table-responsive text-nowrap">
-                    <table class="table table-striped">
+                  <div class="table-responsive text-nowrap" >
+                    <table class="table table-striped" >
                       <thead>
                         <tr>
                           <th>Identifiant</th>
                           <th>Nom et Prenom</th>
                           <th>Adresse</th>
-                          <th>Date</th>
+                          <th>Telephone</th>
                           <th>E-mail</th>
                           <th>Tax(dt)</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
-                         
                       </thead>
-                      <tbody class="table-border-bottom-0">
+ 
+                      <tbody class="table-border-bottom-0"*ngFor="let vendeur of vendeurs" >
                         
                         <tr>
-                          <td>1</td>
-                           <td>Ryheb Elmoncer</td>
+                          <td>{{vendeur.id}}</td>
+                           <td>{{vendeur.title}}</td>
                           <td>                          
-                             Sfax  
+                            {{vendeur.adresse}}  
                           </td>
                           <td>
-                         12/02/2023
-                          <td>
-                            test@gmail.com
-                          </td>
+                            {{vendeur.telephone}} 
+                          </td> 
+                            <td>
+                              {{vendeur.email}} 
+                                                      </td>
                           <td>
                            100 dt
                           </td>
@@ -254,8 +259,9 @@
                           </td>
                         </tr>
                         
-                       
+
                       </tbody>
+
                     </table>
                   </div>
                 </div>     
