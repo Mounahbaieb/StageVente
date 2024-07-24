@@ -20,4 +20,14 @@ export class VendeursServiceService {
   getAllVendeurs(): Observable<Vendeur[]> {
     return this.http.get<Vendeur[]>(this.url);
   }
+  getVendeurbyId(id: String): Observable<Vendeur> {
+    return this.http.get<Vendeur>(`http://localhost:3000/vendeurs/${id}`);
+  }
+  edit(form: any, id: string): Observable<any> {
+    return this.http.put<any>(
+      `http://localhost:3000/vendeurs/${id}`,form);
+  }
+  confirm(form: any): Observable<any> {
+    return this.http.post<any>('http://localhost:3000/vendeurs', form);
+  }
 }

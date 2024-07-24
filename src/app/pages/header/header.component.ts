@@ -27,9 +27,11 @@ export class HeaderComponent {
   }
 
   logout(): void {
+    this.router.navigateByUrl('/login').then(()=>{
+      location.reload()
+    })
     // Ajoutez ici votre logique de déconnexion (par exemple, nettoyage de tokens, etc.)
     // Redirection vers la page de login
-    this.authService.logout(); // Exemple: appeler votre service de déconnexion
-    this.router.navigateByUrl('/login');
+    
   }
 }

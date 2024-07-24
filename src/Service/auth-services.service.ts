@@ -16,7 +16,7 @@ export class AuthServicesService {
   }
 
   logout() {
-    this.isAuthenticated = true;
+    this.isAuthenticated = false;
     this.router.navigate(['/login']); // Redirection vers la page de connexion après déconnexion
   }
 

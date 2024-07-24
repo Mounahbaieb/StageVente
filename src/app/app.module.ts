@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar'; // Importez MatSnackBarModule
 
 
- import { FormsModule } from '@angular/forms';
+ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalindarComponent } from './pages/calindar/calindar.component';
 import { SousAdminComponent } from './pages/sous-admin/sous-admin.component';
 import { DetailsInvitationComponent } from './pages/details-invitation/details-invitation.component';
@@ -28,6 +28,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { InvitationComponent } from './pages/invitation/invitation.component';
 import { ConfirmDialogComponent } from './pages/confirm-dialog/confirm-dialog.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ModalComponent } from './modal/modal.component';
+import { MondalLivreurComponent } from './mondal-livreur/mondal-livreur.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     InventionComponent,
     InvitationComponent,
     ConfirmDialogComponent,
+    ModalComponent,
+    MondalLivreurComponent,
 
     
     
@@ -54,7 +58,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserModule,MatButtonModule,MatSelectModule,
     AppRoutingModule,FormsModule,MatNativeDateModule,MatIconModule,
     MatSnackBarModule, 
-    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule,MatDialogModule,
+    BrowserAnimationsModule,MatDatepickerModule,MatFormFieldModule,MatInputModule,MatDialogModule,    FormsModule,
+    ReactiveFormsModule, 
 
   ],
   providers: [],

@@ -10,76 +10,340 @@
       "type": "Patisserie",
       "image": "../../../assets/img/elements/21.jpg",
       "profileImage": "../../../assets/img/avatars/5.png"
-    },
-    {
-      "id": "2",
-      "title": "Waffle ",
-      "name": "Danyel louis",
-      "email": "Waffle@gmail.com",
-      "telephone": "+216 22 555 444",
-      "adresse": "Tunis",
-      "type": "Patisserie",
-      "image": "../../../assets/img/elements/21.jpg",
-      "profileImage": "../../../assets/img/avatars/5.png"
-    },
-    {
-      "id": "3",
-      "title": "MACdonalds",
-      "name": "Mouna Hbaieb",
-      "email": "MACdonalds@gmail.com",
-      "telephone": "+216 99 265 444",
-      "adresse": "Sousse",
-      "type": "Restaurant",
-      "image": "../../../assets/img/elements/21.jpg",
-      "profileImage": "../../../assets/img/avatars/5.png"
-    },
-    {
-      "id": "4",
-      "title": "Cappiciamo",
-      "name": "Hedi Due",
-      "email": "Cappiciamo@gmail.com",
-      "telephone": "+216 21 265 444",
-      "adresse": "Center ville",
-      "type": "Café",
-      "image": "../../../assets/img/elements/21.jpg",
-      "profileImage": "../../../assets/img/avatars/5.png"
     }
   ],
   "vendeurs": [
     {
-      "id": "6575",
-      "title": "MACdonalds",
+      "title": "MACdonaldsss",
       "adresse": "Sousse",
       "telephone": "+216 99 265 444",
-      "email": "MACdonalds@gmail.com"
+      "email": "MACdonalds@gmail.com",
+      "taxe": "100 DT",
+      "id": "6575"
     },
     {
-      "id": "617b",
+      "title": "Waffle ",
+      "adresse": "Tunis",
+      "telephone": "+216 22 555 44",
+      "email": "Waffle@gmail.com",
+      "taxe": "150000000 DT",
+      "id": "3c0f"
+    },
+    {
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com",
+      "taxe": "200 DT",
+      "id": "4d0b"
+    },
+    {
       "title": "Cappiciamo",
       "adresse": "Center ville",
       "telephone": "+216 21 265 444",
-      "email": "Cappiciamo@gmail.com"
+      "email": "Cappiciamo@gmail.com",
+      "taxe": "500 DT",
+      "id": "877b"
     },
     {
-      "id": "3c0f",
-      "title": "Waffle ",
-      "adresse": "Tunis",
-      "telephone": "+216 22 555 444",
-      "email": "Waffle@gmail.com"
+      "id": "390d",
+      "title": "Caaa",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
     },
     {
-      "id": "4797",
+      "id": "34d7",
+      "title": "Caaa",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "54bc",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "24fa",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "c3b2",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "dfce",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "b249",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "3181",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "602d",
+      "title": "waffle",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "ff69",
       "title": "Cia Cia",
       "adresse": "Sfax",
       "telephone": "+216 53 456 113",
       "email": "cia@gmail.com"
     },
     {
-      "id": "3744",
+      "id": "687c",
       "title": "Cia Cia",
       "adresse": "Sfax",
       "telephone": "+216 53 456 113",
       "email": "cia@gmail.com"
+    },
+    {
+      "id": "bcdf",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "a237",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "52fc",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "e941",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "a659",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "7eb0",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "d8d8",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "6a36",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "0859",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "68b8",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "ae8c",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "9e0f",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "8f33",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "912d",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "cf5c",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "603d",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "f143",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "4db8",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "7a90",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com",
+      "taxe": "1500",
+      "id": "a0d3"
+    },
+    {
+      "id": "bbde",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "3ef1",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "d312",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "a7f1",
+      "title": "Cia Cia",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    },
+    {
+      "id": "fdc3",
+      "title": "ali",
+      "adresse": "Sfax",
+      "telephone": "+216 53 456 113",
+      "email": "cia@gmail.com"
+    }
+  ],
+  "Livreurs": [
+    {
+      "identifiant": "15668777",
+      "NomPrenom": "MounaHbaieb",
+      "adresse": "Sfax",
+      "email": "Mouna@gmail.com",
+      "telephone": "+216 99 265 444",
+      "taxe": "100 DT",
+      "id": "1"
+    },
+    {
+      "identifiant": "14578899",
+      "NomPrenom": "Amal",
+      "adresse": "sfax sud",
+      "email": "ahmed@gmail.com",
+      "telephone": "24568914",
+      "taxe": "100",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "identifiant": "11111",
+      "NomPrenom": "aaa",
+      "adresse": "aaa",
+      "email": "a",
+      "telephone": "25444",
+      "taxe": "100"
+    },
+    {
+      "id": "4",
+      "identifiant": "1136014",
+      "NomPrenom": "aa",
+      "adresse": "aa",
+      "email": "mm",
+      "telephone": "a",
+      "taxe": "12"
+    },
+    {
+      "id": "b973",
+      "identifiant": "aa",
+      "NomPrenom": "a",
+      "adresse": "aa",
+      "email": "aa",
+      "telephone": "aa",
+      "taxe": "aa"
     }
   ]
 }

@@ -4,5 +4,6 @@ export interface Vendeur {
     adresse: string,
     telephone: string,
     email: string,
+    taxe:string,
   }
   
